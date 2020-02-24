@@ -5,9 +5,9 @@ import java.io.ObjectInputStream;
 
 public class ATMFactory {
 
-	public ATM makeATM(double startingBalance, String location){
+	public ATM makeATM(double startingBalance, String location, String pathName){
 		ATM temp = null;
-		File file = new File("C:/Users/yugio/Desktop/JavaProjects/ATMCustomProxy");
+		File file = new File(pathName);
 		String[] filesInDir = file.list();
 		String atmFileName = location + "ATM.ser";
 		if (filesInDir != null) {
