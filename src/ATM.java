@@ -17,6 +17,7 @@ public class ATM implements Serializable {
 		remainingMoneyInATM = initMoneyInATM;
 		accountCreds = new HashMap<HashMap<String, String>, Double>();
 		HashMap<String, String> adminCreds = new HashMap<String, String>();
+		HashMap<String, String> mechCreds = new HashMap<>();
 		adminCreds.put("Admin", "password123");
 		accountCreds.put(adminCreds, 0.0);
 		fileName = location + "ATM.ser";

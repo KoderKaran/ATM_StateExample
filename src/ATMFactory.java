@@ -33,6 +33,7 @@ public class ATMFactory {
 			return temp;
 		}else{
 			System.out.println("Retrieved old ATM!");
+			temp.setState(new LoggedOutState(temp));
 			return temp;
 		}
 	}
